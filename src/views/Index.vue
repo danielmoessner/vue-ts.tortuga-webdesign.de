@@ -1,0 +1,16 @@
+<template>
+  <div class="pt-32 pb-64 px-5">
+    <img class="mx-auto" alt="Vue logo" src="/logo.png" />
+    <HelloWorld msg="vue-ts.tortuga-webdesign.de" />
+  </div>
+</template>
+
+<script lang="ts">
+import HelloWorld from "@/components/HelloWorld.vue";
+
+export default {
+  components: {
+    HelloWorld,
+  },
+};
+</script>

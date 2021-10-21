@@ -1,57 +1,37 @@
-<script setup lang="ts">
-import { ref } from "vue";
-
-defineProps<{ msg: string }>();
-
-const count = ref(0);
-</script>
-
 <template>
-  <h1>{{ msg }}</h1>
-
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-  </p>
-
-  <p>
-    See
-    <code>README.md</code>
-    for more information.
-  </p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Docs
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-  </p>
-
-  <button type="button" @click="count++">count is: {{ count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code>
-    to test hot module replacement.
-  </p>
+  <div class="prose mx-auto max-w-lg">
+    <h1 class="text-2xl font-bold mb-6">{{ msg }}</h1>
+    <p>
+      This is my personal starter for Vue 3 projects that require typescript
+      support.
+    </p>
+    <h2>Included</h2>
+    <ul>
+      <li>Typescript</li>
+      <li>Vite</li>
+      <li>Vue 3</li>
+      <li>Vuex Store</li>
+      <li>Vue Router</li>
+      <li>PostCSS</li>
+      <li>TailwindCSS</li>
+      <li>Headless UI</li>
+      <li>Heroicons</li>
+      <li>ESLint</li>
+      <li>Prettier</li>
+      <li>axios</li>
+    </ul>
+    <h2>Recommended Setup</h2>
+    <ul>
+      <li>VSCode</li>
+      <li>Volar (VSCode Plugin)</li>
+    </ul>
+    <h2>Hosting</h2>
+    <ul>
+      <li>Netlify ready</li>
+    </ul>
+  </div>
 </template>
 
-<style scoped>
-a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
-</style>
+<script setup lang="ts">
+defineProps<{ msg: string }>();
+</script>
