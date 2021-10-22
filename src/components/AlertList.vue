@@ -30,11 +30,6 @@
       </div>
     </transition-group>
   </div>
-  <button type="button" @click="$store.dispatch('alert/createAlerts')">
-    create alerts
-  </button>
-  <button type="button" @click="generateError()">create error</button>
-  <button type="button" @click="$router.push({ name: 'index' })">test</button>
 </template>
 
 <script lang="ts">
@@ -48,14 +43,6 @@ export default defineComponent({
   },
   computed: {
     ...mapGetters({ alerts: "alert/alerts" }),
-  },
-  methods: {
-    generateError() {
-      this.$axios.get("api/error/");
-    },
-    move() {
-      this.$router.push({ name: "index" });
-    },
   },
 });
 </script>
