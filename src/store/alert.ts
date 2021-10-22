@@ -19,14 +19,14 @@ const actions = {
   },
   createAlerts: (context: ActionContext<AlertState, RootState>) => {
     context.dispatch("createAlert", {
-      type: "error",
-      heading: "Error",
-      message: "Hallo ich bin ein error Alert",
+      type: "success",
+      heading: "Success",
+      message: "Hello, I'm a success alert.",
     });
     context.dispatch("createAlert", {
-      type: "success",
-      heading: "Erfolg",
-      message: "Hallo ich bin ein erfolgreicher Alert",
+      type: "error",
+      heading: "Error",
+      message: "Hello, I'm an error alert.",
     });
   },
 };
