@@ -29,6 +29,20 @@
     <ul>
       <li>Netlify ready</li>
     </ul>
+    <h2>Alerts</h2>
+    <ul>
+      <li>
+        <p>
+          <button
+            class="text-green-500 underline"
+            type="button"
+            @click="$store.dispatch('alert/createAlerts')"
+          >
+            Create alerts
+          </button>
+        </p>
+      </li>
+    </ul>
   </div>
 </template>
 

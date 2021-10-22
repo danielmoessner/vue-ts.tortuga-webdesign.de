@@ -1,5 +1,5 @@
 {
-  "name": "lawandorga-frontend",
+  "name": "vue-ts.tortuga-webdesign.de",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -15,6 +15,7 @@
     "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/line-clamp": "^0.2.2",
     "@tailwindcss/typography": "^0.4.1",
+    "@types/node": "^16.11.3",
     "@vitejs/plugin-vue": "^1.9.3",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^8.0.0",
@@ -30,9 +31,9 @@
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
     "vue": "^3.2.16",
-    "vue-router": "^4.0.0-0",
+    "vue-router": "^4.0.12",
     "vue-tsc": "^0.3.0",
-    "vuex": "^4.0.0-0"
+    "vuex": "^4.0.2"
   },
   "browserslist": [
     "> 1%",

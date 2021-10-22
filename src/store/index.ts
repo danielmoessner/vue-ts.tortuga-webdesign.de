@@ -1,7 +1,10 @@
 import { createStore } from "vuex";
+import alert from "./alert";
 
 const store = createStore({
-  modules: {},
+  modules: {
+    alert,
+  },
   strict: true,
 });
 

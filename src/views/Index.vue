@@ -7,10 +7,11 @@
 
 <script lang="ts">
 import HelloWorld from "@/components/HelloWorld.vue";
+import { defineComponent } from "@vue/runtime-core";
 
-export default {
+export default defineComponent({
   components: {
     HelloWorld,
   },
-};
+});
 </script>
