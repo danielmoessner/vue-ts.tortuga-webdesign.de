@@ -1,7 +1,7 @@
 <template>
   <div class="pt-32 pb-64 px-5">
     <img class="mx-auto" alt="Vue logo" src="/logo.png" />
-    <HelloWorld msg="vue-ts.tortuga-webdesign.de" />
+    <HelloWorld msg="vue3-ts.tortuga-webdesign.de" />
   </div>
 </template>
 
